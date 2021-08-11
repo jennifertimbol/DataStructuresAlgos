@@ -1,0 +1,28 @@
+Data structures
+A way of storing data, collection of values, format, relation between values 
+
+Common operations:
+1. Access and read values
+2. Search for values
+3. Insert
+4. Deleting
+
+1. Arrays
+Fundamental data structures, stores collection of value stored in index
+Index: position in Array
+Lists can be different from an Array depending on language
+Contiguous data structure
+
+2. Linked Lists
+Linear data structure, element in list contained in separate object called Node
+Self referential Objects
+Head node, Tail node
+
+2 Forms of linked lists:
+Singly Linked List- points to the right, reference to the next
+Doubly Linked list- reference to the one before and after
+
+3. Merge Sorting
+Divide and conquer algorithm
+Splitting up problems, keep splitting until down to single arrays and merging them back together
+Implement in Singly Linked

@@ -1,0 +1,190 @@
+What is Big O?
+Having multiple implementations of the same function and figuring out which one is "best"
+It allows us to talk formally about how the runtime of an algo grows as the input grows
+
+Linear O(n)
+As n scales, the run time scales
+
+Quadratic O(n2)
+n grows run time squares related to the square of n
+
+Constant O(1)
+n grows, no impact bc runtime is always constant
+
+When n grows, what does the chart look like?
+
+What does 'better' mean?
+Faster? Less memory intensive? More readable?
+
+If not time, then what?
+Count the num of simple operations the computer has to perform
+
+
+*********************************************************************************************
+
+Analyzing Performance of Arrays and Objects
+
+Big O of Objects
+Insertion - O(1)
+Removal - O(1)
+Searching - O(1)
+Access- O(1)
+When you don't need any ordering, objects are a great choice!
+
+Big O of Objects Methods
+keys O(n)
+values O(n)
+entries O(n)
+hasownProperty O(1)
+
+Arrays (Ordered lists!)
+-When to use
+When you need order (not the only one though)
+When you need fast access / insertion and removal (sort of)
+Searching O(n)
+Accessing O(1)
+Insertion depends on where
+Removal depends on where
+
+Big O of Array Methods
+push O(1)
+pop O(1)
+shift O(n)
+unshift O(n)
+concat O(n)
+slice O(n)
+splice O(n)
+sort O(n * log n)
+
+**********************************************************************************
+
+Problem Solving Approach
+
+How do you improve?
+1. Devise a plan for solving problems
+2. Master common problem solving patterns
+
+(5) Problem Solving Strategies
+1. Understand The Problem
+(How to Solve It by George Polya)
+- Can I restate the problem in my own words?
+- What are the inputs and outputs?
+- Do you have enough info to solve the problem?
+- How should I label the important data in the problem?
+
+ex.
+Write a function which takes two numbers and returns their sum.
+
+- Can I restate the problem in my own words?
+/Implement addition
+- What are the inputs that go into the problem?
+/ints? floats? string for large numbers?
+- Can the outputs be determined from the inputs? Do you have enough info to solve the problem?
+- How should I label the important data in the problem?
+
+2. Explore Concrete Examples
+Can help you understand the problem better
+Examples provide sanity checks that your eventual solution works how it should
+-Start with simple Examples
+-Progress to more complex Examples
+-Explore examples with empty inputs
+-Explore examples with invalid inputs
+
+ex. 
+Write a function which takes in a string and returns counts of each character in the string.
+
+-Start with simple Examples
+charCount("aaaa"); //{a:4}
+
+-Progress to more complex Examples
+"my phone number is 18392" //what do we expect it returns? do we account the spaces?
+
+"Hello hi" //do we store uppercase and lowercase h?
+
+-Explore examples with empty inputs
+charCount("") // do we wanna return an empty object? error? null? false? undefined?
+
+-Explore examples with invalid inputs
+what if someone passes in something that isn't a string, ex. object, number, null, etc
+
+
+3. Break it down
+Take the steps of the problem and write them down, pseudo code/comment it out
+Start with the basic components of the solution
+
+ex. 
+Write a function which takes in a string and returns counts of each character in the string.
+
+charCount('Your PIN number is 1234!)
+/* {
+    1:1,
+    2:1,
+    3:1,
+    4:1,
+    b:1,
+    e:1,
+    i:2,
+    m:1,
+    n:2,
+    o:1,
+    p:1,
+    r:2,
+    s:1,
+    u:2,
+    y:1
+} */
+
+function charCount(str){
+    //do something
+    //return an objects with keys that are lowercase alphanumeric characters in the string; values should be
+    //make objects to return at the end
+    //loop over the string for each character
+    //if char is a number/letter and is a key in object, add 1 to counts
+    //if not, add it and set value to 1
+    //if chatacyer is something else (space, period, etc) dont do anythinng
+    //return object at the end
+}
+
+
+4. Solve/Simplify
+Solve the problem, if you can't, solve the simpler problem!
+If you're stuck on something, go to the one you know what to do
+Write what you can!
+
+ex.
+function charCount(str){
+    //do something
+    //return an objects with keys that are lowercase alphanumeric characters in the string; values should be
+    //make objects to return at the end
+    var result = {};
+    //loop over the string for each character
+    for (var i = 0; i<str.length; i++){
+        var char = str[i].toLowerCase() //lowercase
+        //if char is a number/letter and is a key in object, add 1 to counts
+        if(result[char] > 0) {
+            result[char]++;
+        } //if not, add it and set value to 1
+        else {
+            result[char] = 1;
+        }           
+}
+    //if chatacter is something else (space, period, etc) dont do anythinng
+    //return object at the end
+    return result;
+}
+
+5. Look Back and Refactor
+-Can you check the results?
+-Can you think about different approaches?
+-Can you understand it? Does it make sense?
+-Can you use the result/method for some other problem?
+-Can you improve the performance of your solution?
+-Can you think of other ways to refactor?
+-How have other people solved this problem?
+
+It's worth looking back on your code!
+
+********************************************************************************************
+
+Problem Solving patterns
+(Refer to problemsolv_patterns.js)

@@ -1,0 +1,99 @@
+What is an algorithm?
+Clearly defined problem, statement, input and output
+Steps need to be in specific order and distinct
+Set of steps or instruction to complete a task
+Steps a program takes to finish a task
+A set of steps to solve a problem
+Should produce a result
+Result can be none
+Should be complete
+
+3 steps:
+Finding the steps to complete the task
+Recognizing best solution for this problem
+Understanding when to apply an algorithm
+
+Example:
+Linear Search
+Finding a solution in order
+Uses the same steps to solve a problem
+
+Efficiency
+Time and space
+Measured by time 
+Time complexity how long it takes to complete a job
+Less time you take the more efficient you are
+Space complexity
+How much space it takes
+
+
+O(n) or Big O
+Order of magnitude and complexity
+Function of the size
+Upper bound of the algorithm
+Complexity is relative
+
+O(n) or O(1) = Constant time operation/Big O of N
+Linear Search
+Comparing current value to the next
+Takes the same amount of time
+Run time is constant time
+
+
+O(log n)/ O(ln n)=logarithmic time/sublinear
+Binary search
+Going in the middle of the list and distinct
+When you double the value of n, the num of operations it takes to reduce the list down to a single element increases by 1 = logarithm on N
+
+exponents:
+2^2=4
+2^3=8
+
+Inverse of an exponent is a logarithm
+log(2)8=3 log to the base 2 of 8 = 3
+opposite of an exponent
+how many times do i divide 8 by 2 to get the value of 1
+
+log(2)16=4
+how many tries does it take to get to that last element
+
+run time = logarithmic
+
+Why would we use linear search over binary search?
+We have to use more work with linear 
+
+Quadratic Time = O(n2) / Big O of N squared
+n^2
+An operation raised to the second power/ Squared
+
+Cubic Run Time
+n^3
+
+Quasilinear Runtimes = O(n log n)
+Run time somewhere between a linear run time and quadratic Runtime
+ex: Sorting, Merge Sorting
+
+Above have all been Polynomial Runtimes = O(n^k)
+
+Exponential runtimes O(x^n)
+
+Factorial /Combinatorial runtime = Big O of n factorial/ O(n!)
+n! = n(n-1)n-2..(2)(1_)
+
+How do we determine the worst case complexity?
+
+************************************************
+algorithm thinking - approach to problem solving, breaking problems down
+
+Algorithm
+Steps need to be in specific order
+Steps need to be distinct
+Should produce result
+Should complete in a finite amount of time
+
+Big O - Time Complexity
+
+Common Run Times:
+Constant, Linear, Logarithmic, Quadratic
+
+
